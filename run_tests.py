@@ -169,10 +169,10 @@ if __name__ == "__main__":
         if test_success:
             generate_allure_report()
 
-        print("\\n🎉 测试流程执行结束")
+        print("\n🎉 测试流程执行结束")
 
     except KeyboardInterrupt:
-        print("\\n🛑 用户中断执行")
+        print("\n🛑 用户中断执行")
     except Exception as e:
-        print(f"\\n❌ 执行失败: {e}")
+        print(f"\n❌ 执行失败: {e}")
         sys.exit(1)

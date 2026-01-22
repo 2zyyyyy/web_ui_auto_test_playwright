@@ -117,6 +117,11 @@ def case_setup_teardown(browser_page, request):  # 新增request夹具（Pytest�
     log.info(f"【用例后置】结束执行用例：{current_case_name}")
 
 # ======================== Pytest钩子函数（扩展）========================
+# 在 conftest.py 中注册 smoke 标记
+def pytest_configure(config):
+    # smoke标记
+    config.addinivalue_line("markers", "smoke: 冒烟测试用例")  # 注册冒烟标记
+
 # 其他钩子函数（删除pytest_runtest_setup，无需再自定义current_test_name）
 def pytest_collection_modifyitems(items):
     """解决中文用例名乱码（不变）"""

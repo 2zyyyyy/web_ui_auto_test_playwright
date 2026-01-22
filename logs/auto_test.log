@@ -194,3 +194,39 @@ Call log:
 2026-01-22 18:17:15.707 | INFO     | conftest:browser_page:95 - 【夹具】关闭Playwright浏览器
 2026-01-22 18:17:16.167 | INFO     | conftest:global_session_setup_teardown:30 - 【全局后置】测试会话结束，清理环境
 2026-01-22 18:17:16.168 | INFO     | conftest:global_session_setup_teardown:31 - ==================================================
+2026-01-22 20:05:44.468 | INFO     | conftest:global_session_setup_teardown:20 - ==================================================
+2026-01-22 20:05:44.468 | INFO     | conftest:global_session_setup_teardown:21 - 【全局前置】测试会话开始，初始化环境
+2026-01-22 20:05:44.468 | INFO     | conftest:browser_page:36 - 【夹具】启动Playwright浏览器（含反爬配置）
+2026-01-22 20:05:49.403 | INFO     | pages.base_page:goto:29 - 【基础层】成功跳转到：https://www.baidu.com
+2026-01-22 20:05:49.811 | INFO     | pages.baidu_page:open:32 - 【核心层】百度首页加载完成，新搜索框已激活
+2026-01-22 20:05:54.532 | INFO     | pages.baidu_page:search:48 - 【核心层】完成关键词搜索：playwright自动化测试
+2026-01-22 20:05:55.268 | INFO     | pages.base_page:click:38 - 点击: (//div[@id='content_left']//h3/a)[3]
+2026-01-22 20:05:55.534 | INFO     | pages.baidu_page:click_result:66 - 【核心层】成功点击第3条搜索结果
+2026-01-22 20:06:06.268 | INFO     | test_baidu_search:test_search_3rd_result:48 - 【业务测试层】测试通过：playwright自动化测试
+2026-01-22 20:06:06.269 | INFO     | conftest:browser_page:95 - 【夹具】关闭Playwright浏览器
+2026-01-22 20:06:06.625 | INFO     | conftest:global_session_setup_teardown:30 - 【全局后置】测试会话结束，清理环境
+2026-01-22 20:06:06.625 | INFO     | conftest:global_session_setup_teardown:31 - ==================================================
+2026-01-22 20:20:08.555 | INFO     | conftest:global_session_setup_teardown:20 - ==================================================
+2026-01-22 20:20:08.555 | INFO     | conftest:global_session_setup_teardown:21 - 【全局前置】测试会话开始，初始化环境
+2026-01-22 20:20:08.556 | INFO     | conftest:browser_page:36 - 【夹具】启动Playwright浏览器（含反爬配置）
+2026-01-22 20:20:17.816 | INFO     | pages.base_page:goto:29 - 【基础层】成功跳转到：https://www.baidu.com
+2026-01-22 20:20:18.274 | INFO     | pages.baidu_page:open:32 - 【核心层】百度首页加载完成，新搜索框已激活
+2026-01-22 20:20:22.907 | INFO     | pages.baidu_page:search:48 - 【核心层】完成关键词搜索：playwright自动化测试
+2026-01-22 20:20:23.584 | INFO     | pages.base_page:click:38 - 点击: (//div[@id='content_left']//h3/a)[3]
+2026-01-22 20:20:23.864 | INFO     | pages.baidu_page:click_result:66 - 【核心层】成功点击第3条搜索结果
+2026-01-22 20:20:34.008 | INFO     | test_baidu_search:test_search_3rd_result:51 - 【业务测试层】测试通过：playwright自动化测试
+2026-01-22 20:20:34.011 | INFO     | conftest:browser_page:95 - 【夹具】关闭Playwright浏览器
+2026-01-22 20:20:34.435 | INFO     | conftest:global_session_setup_teardown:30 - 【全局后置】测试会话结束，清理环境
+2026-01-22 20:20:34.435 | INFO     | conftest:global_session_setup_teardown:31 - ==================================================
+2026-01-22 20:21:24.550 | INFO     | conftest:global_session_setup_teardown:20 - ==================================================
+2026-01-22 20:21:24.551 | INFO     | conftest:global_session_setup_teardown:21 - 【全局前置】测试会话开始，初始化环境
+2026-01-22 20:21:24.551 | INFO     | conftest:browser_page:36 - 【夹具】启动Playwright浏览器（含反爬配置）
+2026-01-22 20:21:27.916 | INFO     | pages.base_page:goto:29 - 【基础层】成功跳转到：https://www.baidu.com
+2026-01-22 20:21:28.282 | INFO     | pages.baidu_page:open:32 - 【核心层】百度首页加载完成，新搜索框已激活
+2026-01-22 20:21:33.010 | INFO     | pages.baidu_page:search:48 - 【核心层】完成关键词搜索：playwright自动化测试
+2026-01-22 20:21:33.697 | INFO     | pages.base_page:click:38 - 点击: (//div[@id='content_left']//h3/a)[3]
+2026-01-22 20:21:33.913 | INFO     | pages.baidu_page:click_result:66 - 【核心层】成功点击第3条搜索结果
+2026-01-22 20:21:39.671 | INFO     | test_baidu_search:test_search_3rd_result:51 - 【业务测试层】测试通过：playwright自动化测试
+2026-01-22 20:21:39.673 | INFO     | conftest:browser_page:95 - 【夹具】关闭Playwright浏览器
+2026-01-22 20:21:40.041 | INFO     | conftest:global_session_setup_teardown:30 - 【全局后置】测试会话结束，清理环境
+2026-01-22 20:21:40.042 | INFO     | conftest:global_session_setup_teardown:31 - ==================================================

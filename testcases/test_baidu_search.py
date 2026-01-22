@@ -20,7 +20,10 @@ def load_test_data():
 
 test_data = load_test_data()
 
-
+# 严重级别：BLOCKER(阻塞)/CRITICAL(严重)/NORMAL(普通，默认值)/MINOR(次要)/TRIVIAL(轻微)
+@allure.severity(allure.severity_level.BLOCKER)
+# 设置为冒烟测试用例（需要在conftest中提前预设对应的标签）
+@pytest.mark.smoke
 @allure.epic("百度搜索测试")
 class TestBaiduSearch:
     # 仅调用夹具，不关心浏览器如何启动/配置
