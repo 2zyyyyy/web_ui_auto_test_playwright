@@ -1,0 +1,196 @@
+2026-01-21 20:46:23.004 | INFO     | __main__:<module>:12 - 开始执行测试用例
+2026-01-22 10:43:31.269 | INFO     | test_baidu_search:browser:16 - 启动浏览器
+2026-01-22 10:43:32.680 | INFO     | pages.base_page:goto:16 - 访问: https://www.baidu.com
+2026-01-22 10:43:37.821 | INFO     | pages.base_page:fill:34 - 输入: playwright自动化测试 到 #kw
+2026-01-22 10:44:08.422 | ERROR    | pages.base_page:fill:37 - 输入失败: Locator.fill: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#kw")
+    - locator resolved to <input id="kw" value="" name="wd" class="s_ipt" maxlength="255" autocomplete="off" placeholder="气温太低特斯拉喜提冰糖皮"/>
+    - fill("playwright自动化测试")
+  - attempting fill action
+    2 × waiting for element to be visible, enabled and editable
+      - element is not visible
+    - retrying fill action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and editable
+      - element is not visible
+    - retrying fill action
+      - waiting 100ms
+    59 × waiting for element to be visible, enabled and editable
+       - element is not visible
+     - retrying fill action
+       - waiting 500ms
+
+2026-01-22 10:44:08.564 | INFO     | pages.base_page:screenshot:44 - 截图保存: screenshots\error_20260122_104408.png
+2026-01-22 10:44:08.620 | INFO     | pages.base_page:screenshot:44 - 截图保存: screenshots\fail_20260122_104408.png
+2026-01-22 10:44:08.627 | ERROR    | test_baidu_search:test_search_3rd_result:46 - 测试失败: Locator.fill: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#kw")
+    - locator resolved to <input id="kw" value="" name="wd" class="s_ipt" maxlength="255" autocomplete="off" placeholder="气温太低特斯拉喜提冰糖皮"/>
+    - fill("playwright自动化测试")
+  - attempting fill action
+    2 × waiting for element to be visible, enabled and editable
+      - element is not visible
+    - retrying fill action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and editable
+      - element is not visible
+    - retrying fill action
+      - waiting 100ms
+    59 × waiting for element to be visible, enabled and editable
+       - element is not visible
+     - retrying fill action
+       - waiting 500ms
+
+2026-01-22 10:44:09.146 | INFO     | test_baidu_search:browser:26 - 关闭浏览器
+2026-01-22 11:44:01.585 | INFO     | conftest:global_session_setup_teardown:20 - ==================================================
+2026-01-22 11:44:01.586 | INFO     | conftest:global_session_setup_teardown:21 - 【全局前置】测试会话开始，初始化环境
+2026-01-22 11:44:01.586 | INFO     | conftest:browser_page:36 - 【夹具】启动Playwright浏览器（含反爬配置）
+2026-01-22 11:44:02.690 | INFO     | pages.base_page:goto:23 - 访问: https://www.baidu.com
+2026-01-22 11:44:11.476 | INFO     | pages.baidu_page:open:26 - 【核心层】百度首页加载完成
+2026-01-22 11:44:11.476 | INFO     | pages.base_page:fill:52 - 输入: playwright自动化测试 到 input[name="wd"][id="kw"] (重试0)
+2026-01-22 11:44:41.618 | WARNING  | pages.base_page:fill:67 - 输入重试0失败: Locator.clear: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("input[name=\"wd\"][id=\"kw\"]")
+    - locator resolved to <input id="kw" value="" name="wd" class="s_ipt" maxlength="255" autocomplete="off" placeholder="警方通报女子牵绳遛狗被围殴"/>
+    - fill("")
+  - attempting fill action
+    2 × waiting for element to be visible, enabled and editable
+      - element is not visible
+    - retrying fill action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and editable
+      - element is not visible
+    - retrying fill action
+      - waiting 100ms
+    59 × waiting for element to be visible, enabled and editable
+       - element is not visible
+     - retrying fill action
+       - waiting 500ms
+
+2026-01-22 11:44:42.130 | INFO     | pages.base_page:fill:52 - 输入: playwright自动化测试 到 input[name="wd"][id="kw"] (重试1)
+2026-01-22 11:45:12.269 | WARNING  | pages.base_page:fill:67 - 输入重试1失败: Locator.clear: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("input[name=\"wd\"][id=\"kw\"]")
+    - locator resolved to <input id="kw" value="" name="wd" class="s_ipt" maxlength="255" autocomplete="off" placeholder="警方通报女子牵绳遛狗被围殴"/>
+    - fill("")
+  - attempting fill action
+    2 × waiting for element to be visible, enabled and editable
+      - element is not visible
+    - retrying fill action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and editable
+      - element is not visible
+    - retrying fill action
+      - waiting 100ms
+    59 × waiting for element to be visible, enabled and editable
+       - element is not visible
+     - retrying fill action
+       - waiting 500ms
+
+2026-01-22 11:45:12.777 | ERROR    | pages.base_page:fill:73 - 输入失败（已重试2次）: playwright自动化测试 到 input[name="wd"][id="kw"]
+2026-01-22 11:45:12.908 | INFO     | pages.base_page:screenshot:81 - 截图保存: screenshots\error_20260122_114512.png
+2026-01-22 11:45:12.908 | ERROR    | test_baidu_search:test_search_3rd_result:50 - 【业务测试层】测试失败：输入超时，重试2次仍失败
+2026-01-22 11:45:13.004 | INFO     | conftest:browser_page:68 - 【夹具】关闭Playwright浏览器
+2026-01-22 11:45:13.304 | INFO     | conftest:global_session_setup_teardown:30 - 【全局后置】测试会话结束，清理环境
+2026-01-22 11:45:13.304 | INFO     | conftest:global_session_setup_teardown:31 - ==================================================
+2026-01-22 13:36:18.837 | INFO     | conftest:global_session_setup_teardown:20 - ==================================================
+2026-01-22 13:36:18.837 | INFO     | conftest:global_session_setup_teardown:21 - 【全局前置】测试会话开始，初始化环境
+2026-01-22 13:36:18.838 | INFO     | conftest:browser_page:36 - 【夹具】启动Playwright浏览器（含反爬配置）
+2026-01-22 13:36:19.873 | INFO     | pages.base_page:goto:23 - 访问: https://www.baidu.com
+2026-01-22 13:36:57.770 | ERROR    | test_baidu_search:test_search_3rd_result:50 - 【业务测试层】测试失败：Locator expected to be visible
+Actual value: hidden 
+Call log:
+  - Expect "to_be_visible" with timeout 30000ms
+  - waiting for locator("//input[@id=\"kw\" or @name=\"wd\" or @class=\"s_ipt\"]")
+    33 × locator resolved to <input id="kw" value="" name="wd" class="s_ipt" maxlength="255" autocomplete="off" placeholder="山东应急管理厅副厅长被查"/>
+       - unexpected value "hidden"
+
+2026-01-22 13:36:57.861 | INFO     | conftest:browser_page:75 - 【夹具】关闭Playwright浏览器
+2026-01-22 13:36:58.265 | INFO     | conftest:global_session_setup_teardown:30 - 【全局后置】测试会话结束，清理环境
+2026-01-22 13:36:58.266 | INFO     | conftest:global_session_setup_teardown:31 - ==================================================
+2026-01-22 13:46:49.731 | INFO     | conftest:global_session_setup_teardown:20 - ==================================================
+2026-01-22 13:46:49.739 | INFO     | conftest:global_session_setup_teardown:21 - 【全局前置】测试会话开始，初始化环境
+2026-01-22 13:46:49.739 | INFO     | conftest:browser_page:36 - 【夹具】启动Playwright浏览器（含反爬配置）
+2026-01-22 13:46:50.583 | INFO     | pages.base_page:goto:23 - 访问: https://www.baidu.com
+2026-01-22 13:47:00.707 | ERROR    | pages.base_page:goto:29 - 访问失败: Page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://www.baidu.com/", waiting until "networkidle"
+
+2026-01-22 13:47:00.937 | INFO     | pages.base_page:screenshot:81 - 截图保存: screenshots\error_20260122_134700.png
+2026-01-22 13:47:00.938 | ERROR    | test_baidu_search:test_search_3rd_result:50 - 【业务测试层】测试失败：Page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://www.baidu.com/", waiting until "networkidle"
+
+2026-01-22 13:47:01.132 | INFO     | conftest:browser_page:75 - 【夹具】关闭Playwright浏览器
+2026-01-22 13:47:01.484 | INFO     | conftest:global_session_setup_teardown:30 - 【全局后置】测试会话结束，清理环境
+2026-01-22 13:47:01.484 | INFO     | conftest:global_session_setup_teardown:31 - ==================================================
+2026-01-22 13:56:00.330 | INFO     | conftest:global_session_setup_teardown:20 - ==================================================
+2026-01-22 13:56:00.330 | INFO     | conftest:global_session_setup_teardown:21 - 【全局前置】测试会话开始，初始化环境
+2026-01-22 13:56:00.331 | INFO     | conftest:browser_page:36 - 【夹具】启动Playwright浏览器（含反爬配置）
+2026-01-22 13:56:02.765 | INFO     | pages.base_page:goto:29 - 【基础层】成功跳转到：https://www.baidu.com
+2026-01-22 13:56:12.786 | ERROR    | test_baidu_search:test_search_3rd_result:50 - 【业务测试层】测试失败：Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("//input[@id=\"kw\" or @name=\"wd\" or @class=\"s_ipt\"]") to be visible
+    3 × locator resolved to hidden <input id="kw" value="" name="wd" class="s_ipt" maxlength="255" autocomplete="off"/>
+    21 × locator resolved to hidden <input id="kw" value="" name="wd" class="s_ipt" maxlength="255" autocomplete="off" placeholder="成毅凭3部剧获9项提名"/>
+
+2026-01-22 13:56:12.988 | INFO     | conftest:browser_page:95 - 【夹具】关闭Playwright浏览器
+2026-01-22 13:56:13.335 | INFO     | conftest:global_session_setup_teardown:30 - 【全局后置】测试会话结束，清理环境
+2026-01-22 13:56:13.336 | INFO     | conftest:global_session_setup_teardown:31 - ==================================================
+2026-01-22 14:38:01.356 | INFO     | conftest:global_session_setup_teardown:20 - ==================================================
+2026-01-22 14:38:01.367 | INFO     | conftest:global_session_setup_teardown:21 - 【全局前置】测试会话开始，初始化环境
+2026-01-22 14:38:01.367 | INFO     | conftest:browser_page:36 - 【夹具】启动Playwright浏览器（含反爬配置）
+2026-01-22 14:38:03.837 | INFO     | pages.base_page:goto:29 - 【基础层】成功跳转到：https://www.baidu.com
+2026-01-22 14:38:04.991 | INFO     | pages.baidu_page:open:32 - 【核心层】百度首页加载完成，新搜索框已激活
+2026-01-22 14:38:09.826 | INFO     | pages.baidu_page:search:48 - 【核心层】完成关键词搜索：playwright自动化测试
+2026-01-22 14:38:09.982 | ERROR    | test_baidu_search:test_search_3rd_result:50 - 【业务测试层】测试失败：Locator.input_value: Error: strict mode violation: locator("//textarea[@id=\"chat-textarea\"]") resolved to 2 elements:
+    1) <textarea rows="1" id="chat-textarea" data-ai-placeholder="" data-normal-placeholder="" class="chat-input-textarea chat-input-scroll-style" onkeydown="if (event.keyCode === 13) event.preventDefault();">playwright自动化测试</textarea> aka locator("#main-wrapper").get_by_text("playwright自动化测试")
+    2) <textarea rows="1" id="chat-textarea" autocomplete="off" placeholder="约基奇的NBA纪录被卢卡打破" data-ai-placeholder="口苦怎么调理最有效？" data-normal-placeholder="约基奇的NBA纪录被卢卡打破" class="chat-input-textarea chat-input-scroll-style"></textarea> aka get_by_role("textbox", name="约基奇的NBA纪录被卢卡打破")
+
+Call log:
+  - waiting for locator("//textarea[@id=\"chat-textarea\"]")
+
+2026-01-22 14:38:10.226 | INFO     | conftest:browser_page:95 - 【夹具】关闭Playwright浏览器
+2026-01-22 14:38:10.700 | INFO     | conftest:global_session_setup_teardown:30 - 【全局后置】测试会话结束，清理环境
+2026-01-22 14:38:10.701 | INFO     | conftest:global_session_setup_teardown:31 - ==================================================
+2026-01-22 14:40:57.377 | INFO     | conftest:global_session_setup_teardown:20 - ==================================================
+2026-01-22 14:40:57.385 | INFO     | conftest:global_session_setup_teardown:21 - 【全局前置】测试会话开始，初始化环境
+2026-01-22 14:40:57.386 | INFO     | conftest:browser_page:36 - 【夹具】启动Playwright浏览器（含反爬配置）
+2026-01-22 14:40:59.787 | INFO     | pages.base_page:goto:29 - 【基础层】成功跳转到：https://www.baidu.com
+2026-01-22 14:41:00.938 | INFO     | pages.baidu_page:open:32 - 【核心层】百度首页加载完成，新搜索框已激活
+2026-01-22 14:41:05.464 | INFO     | pages.baidu_page:search:48 - 【核心层】完成关键词搜索：playwright自动化测试
+2026-01-22 14:41:05.626 | ERROR    | test_baidu_search:test_search_3rd_result:50 - 【业务测试层】测试失败：Locator.input_value: Error: strict mode violation: locator("//textarea[@id=\"chat-textarea\"]") resolved to 2 elements:
+    1) <textarea rows="1" id="chat-textarea" data-ai-placeholder="" data-normal-placeholder="" class="chat-input-textarea chat-input-scroll-style" onkeydown="if (event.keyCode === 13) event.preventDefault();">playwright自动化测试</textarea> aka locator("#main-wrapper").get_by_text("playwright自动化测试")
+    2) <textarea rows="1" id="chat-textarea" autocomplete="off" placeholder="WTT常规赛国乒7人被淘汰" data-ai-placeholder="推荐适合带孩子的旅游景点" data-normal-placeholder="WTT常规赛国乒7人被淘汰" class="chat-input-textarea chat-input-scroll-style"></textarea> aka get_by_role("textbox", name="WTT常规赛国乒7人被淘汰")
+
+Call log:
+  - waiting for locator("//textarea[@id=\"chat-textarea\"]")
+
+2026-01-22 14:41:05.870 | INFO     | conftest:browser_page:95 - 【夹具】关闭Playwright浏览器
+2026-01-22 14:41:06.308 | INFO     | conftest:global_session_setup_teardown:30 - 【全局后置】测试会话结束，清理环境
+2026-01-22 14:41:06.316 | INFO     | conftest:global_session_setup_teardown:31 - ==================================================
+2026-01-22 15:02:21.471 | INFO     | conftest:global_session_setup_teardown:20 - ==================================================
+2026-01-22 15:02:21.471 | INFO     | conftest:global_session_setup_teardown:21 - 【全局前置】测试会话开始，初始化环境
+2026-01-22 15:02:21.472 | INFO     | conftest:browser_page:36 - 【夹具】启动Playwright浏览器（含反爬配置）
+2026-01-22 15:02:24.345 | INFO     | pages.base_page:goto:29 - 【基础层】成功跳转到：https://www.baidu.com
+2026-01-22 15:02:25.574 | INFO     | pages.baidu_page:open:32 - 【核心层】百度首页加载完成，新搜索框已激活
+2026-01-22 15:02:30.411 | INFO     | pages.baidu_page:search:48 - 【核心层】完成关键词搜索：playwright自动化测试
+2026-01-22 15:02:31.272 | INFO     | pages.base_page:click:38 - 点击: (//div[@id='content_left']//h3/a)[3]
+2026-01-22 15:02:31.491 | INFO     | pages.baidu_page:click_result:66 - 【核心层】成功点击第3条搜索结果
+2026-01-22 15:02:31.946 | INFO     | test_baidu_search:test_search_3rd_result:48 - 【业务测试层】测试通过：playwright自动化测试
+2026-01-22 15:02:31.949 | INFO     | conftest:browser_page:95 - 【夹具】关闭Playwright浏览器
+2026-01-22 15:02:32.455 | INFO     | conftest:global_session_setup_teardown:30 - 【全局后置】测试会话结束，清理环境
+2026-01-22 15:02:32.455 | INFO     | conftest:global_session_setup_teardown:31 - ==================================================
+2026-01-22 18:16:58.673 | INFO     | conftest:global_session_setup_teardown:20 - ==================================================
+2026-01-22 18:16:58.674 | INFO     | conftest:global_session_setup_teardown:21 - 【全局前置】测试会话开始，初始化环境
+2026-01-22 18:16:58.675 | INFO     | conftest:browser_page:36 - 【夹具】启动Playwright浏览器（含反爬配置）
+2026-01-22 18:17:03.519 | INFO     | pages.base_page:goto:29 - 【基础层】成功跳转到：https://www.baidu.com
+2026-01-22 18:17:03.874 | INFO     | pages.baidu_page:open:32 - 【核心层】百度首页加载完成，新搜索框已激活
+2026-01-22 18:17:08.470 | INFO     | pages.baidu_page:search:48 - 【核心层】完成关键词搜索：playwright自动化测试
+2026-01-22 18:17:09.198 | INFO     | pages.base_page:click:38 - 点击: (//div[@id='content_left']//h3/a)[3]
+2026-01-22 18:17:09.509 | INFO     | pages.baidu_page:click_result:66 - 【核心层】成功点击第3条搜索结果
+2026-01-22 18:17:15.705 | INFO     | test_baidu_search:test_search_3rd_result:48 - 【业务测试层】测试通过：playwright自动化测试
+2026-01-22 18:17:15.707 | INFO     | conftest:browser_page:95 - 【夹具】关闭Playwright浏览器
+2026-01-22 18:17:16.167 | INFO     | conftest:global_session_setup_teardown:30 - 【全局后置】测试会话结束，清理环境
+2026-01-22 18:17:16.168 | INFO     | conftest:global_session_setup_teardown:31 - ==================================================

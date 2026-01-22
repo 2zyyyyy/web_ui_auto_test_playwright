@@ -1,0 +1,5 @@
+base_url: "https://www.baidu.com"
+timeout: 30
+retry_times: 3
+log_file: "logs/auto_test.log"
+allure_report: "reports/allure-results"
