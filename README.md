@@ -1,13 +1,13 @@
 # Web UI 自动化测试脚手架
 
 ## 项目介绍
-基于 Python+pytest+playwright+allure 的 Web UI 自动化测试脚手架，采用 POM 设计模式 + YAML 数据驱动。
+基于 Python+Pytest+Playwright+Allure 的 Web UI 自动化测试脚手架，采用 POM 设计模式 + YAML 数据驱动。
 
 ## 技术栈
 - Python 3.8+
-- pytest
-- playwright
-- allure-pytest
+- Pytest
+- Playwright
+- Allure-pytest
 - PyYAML
 - POM 设计模式
 
